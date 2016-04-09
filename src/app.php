@@ -31,6 +31,8 @@ $app->match('/', function () use ($app) {
         'thoughts' => $thoughts,
     ));
     */
+    
+    return $app['twig']->render('hello.twig');
 });
 
 // Handle the add page
