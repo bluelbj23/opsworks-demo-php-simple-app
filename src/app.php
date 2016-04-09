@@ -22,6 +22,7 @@ $app['db'] = $app->share(function ($app) {
 
 // Handle the index page
 $app->match('/', function () use ($app) {
+    /*
     $query = $app['db']->prepare("SELECT message, author FROM {$app['db.table']}");
     $thoughts = $query->execute() ? $query->fetchAll(PDO::FETCH_ASSOC) : array();
 
@@ -29,6 +30,7 @@ $app->match('/', function () use ($app) {
         'title'    => 'Your Thoughts',
         'thoughts' => $thoughts,
     ));
+    */
 });
 
 // Handle the add page
